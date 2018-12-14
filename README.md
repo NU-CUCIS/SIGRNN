@@ -1,6 +1,9 @@
 # SIGRNN
 SIGRNN: Synthetic Minority Instances Generation in Imbalanced Datasets Using a Recurrent Neural Network Approach
 
+## Transform data
+- Before generating any data first we transform the input data to a paragraph. <code>transform_data.py</code> is an example of a code snippiet to convert a csv file of features to a text file. This text file if fed as input to the SIGRNN in the next step.
+
 ## Train SIGRNN
 - To train SIGRNN run <code>main.py</code>. The script takes a set of inputs and can be executed as the following example:
 <code>python main.py --cuda --nhid 1024 --dropout 0.5 --epochs 20 --batch_size 8 --nlayers 2  --data ./data/seer --bptt 11</code>
