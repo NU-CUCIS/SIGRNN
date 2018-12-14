@@ -18,9 +18,9 @@ SIGRNN: Synthetic Minority Instances Generation in Imbalanced Datasets Using a R
 ## Generate using SIGRNN
 - To generate synthetic SIGRNN run <code>generate.py</code>. The script takes a set of inputs and can be executed as the following example: <code>python generate.py --cuda --words 1500000 --data ./data/seer --outf ./data/seer/generated.txt --temperature 1.3</code>.
     - Flag descriptions:
-        - <code>--code</code> is used for GPU execution. The GPU id can be set within the code.
+        - <code>--cuda</code> is used for GPU execution. The GPU id can be set within the code.
         - <code>--words</code> is the number of words to be generated.
-        - <code>----outf</code> is to specify the output file.
+        - <code>--outf</code> is to specify the output file.
         - <code>--temperature</code> is to increase/decrese the varience in the generated examples.
         - <code>--data</code> is the folder where the data is saved.
             - 3 files need to be present under the directory train.txt, test.txt, and valid.txt
