@@ -17,10 +17,9 @@ data[data_obj.columns] = data_obj.apply(lambda x: x.str.strip())
 # recode the class variable
 data['class'] = data['class'].map({'<=50K': '1', '>50K': '0'})
 
-labels = list(set(data['class']))
-labels = ['0', '1']
-
 column_list = list(data.columns)
+
+# this column is removed it adds no meaning to the data
 column_list.remove('fnlwgt')
 data = data[column_list]
 LABEL = 0
